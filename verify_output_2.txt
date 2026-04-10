@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "D:\CPM\crypto_portfolio_avd _Copy2\tmp\verify_modular_pipeline.py", line 59, in main
+    result_pred = pipeline.get_prediction(df, asset, days_ahead=7)
+  File "D:\CPM\crypto_portfolio_avd _Copy2\ai_models\pipeline.py", line 95, in get_prediction
+    return self.engine.forecast(df, asset_id, days_ahead)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CPM\crypto_portfolio_avd _Copy2\ai_models\prediction_engine.py", line 107, in forecast
+    pred = float(model.predict(X_input)[0])
+                 ~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_base.py", line 311, in predict
+    return self._decision_function(X)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\linear_model\_base.py", line 290, in _decision_function
+    X = validate_data(self, X, accept_sparse=["csr", "csc", "coo"], reset=False)
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py", line 2923, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py", line 2787, in _check_n_features
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: X has 8 features, but LinearRegression is expecting 240 features as input.

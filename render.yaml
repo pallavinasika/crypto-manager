@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: crypto-intelligence
+    env: python
+    buildCommand: ./render-build.sh
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: NODE_VERSION
+        value: "20"

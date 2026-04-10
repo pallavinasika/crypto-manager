@@ -1,0 +1,4 @@
+avg_cost,coin_id,current_price,date,quantity,type,unrealized_pnl
+45000.0,bitcoin,70917,HOLDING,0.5,HOLD,12958.5
+2400.0,ethereum,2163.18,HOLDING,5.0,HOLD,-1184.1000000000004
+95.0,solana,91.43,HOLDING,50.0,HOLD,-178.5

@@ -1,0 +1,3 @@
+coin_id,current_price,predicted_price,change_pct,direction,model
+binancecoin,645.48,643.0891842460318,-0.3703934674921361,📉 Bearish,random_forest
+cardano,0.262359,0.3670367447800864,39.89866739089811,📈 Bullish,random_forest

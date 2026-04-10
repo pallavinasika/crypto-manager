@@ -1,0 +1,15 @@
+MongoDB connection failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69c185127c8ef90e2ed8d410, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+Switching to Dynamic JSON Offline Storage...
+Loaded persistent offline data from database/offline_storage.json
+INFO:     127.0.0.1:59881 - "GET /socket.io/?EIO=4&transport=polling&t=ikn773gq HTTP/1.1" 200 OK
+Client connected: SksC9KAmcNh9slsKAAAB
+INFO:     127.0.0.1:59881 - "POST /socket.io/?EIO=4&transport=polling&t=ikodm1yh&sid=rHyFUiuG5Yv2VaIuAAAA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59881 - "GET /socket.io/?EIO=4&transport=polling&t=ikodnxlk&sid=rHyFUiuG5Yv2VaIuAAAA HTTP/1.1" 200 OK
+
+Launching FastAPI Server on port 8001...
+ INFO:     127.0.0.1:53885 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53886 - "GET /api/ping HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53887 - "GET /api/market?per_page=1 HTTP/1.1" 200 OK
+Client disconnected: SksC9KAmcNh9slsKAAAB
+Closed database connection
+ 

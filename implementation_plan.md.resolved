@@ -1,0 +1,65 @@
+# Project Execution Plan
+
+This plan outlines the exact steps to run the AI Crypto Investment Intelligence Platform.
+
+## Backend & Streamlit Dashboard (Python)
+
+### 1. Environment Setup
+- Activate the virtual environment:
+  ```powershell
+  .venv\Scripts\activate
+  ```
+- Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+### 2. Database Initialization
+- Initialize the database and sample data:
+  ```bash
+  python main.py setup
+  ```
+
+### 3. Running Services
+- **FastAPI Backend (API):**
+  ```bash
+  python main.py api
+  ```
+  Available at: http://localhost:8000/docs
+- **Streamlit Dashboard:**
+  ```bash
+  python main.py dashboard
+  ```
+  Available at: http://localhost:8501
+
+---
+
+## Modern React Frontend (Vite)
+
+### 1. Installation
+- Navigate to the `web` directory:
+  ```bash
+  cd web
+  ```
+- Install Node.js dependencies:
+  ```bash
+  npm install
+  ```
+
+### 2. Running the App
+- Start the development server:
+  ```bash
+  npm run dev
+  ```
+  Available at: http://localhost:5173
+
+## Verification Plan
+
+### Automated Checks
+- Verify if the API responds to `/docs`.
+- Verify if the Streamlit server starts correctly.
+- Verify if Vite server starts correctly.
+
+### Manual Verification
+- Open the resulting URLs in the browser.
+- Ensure the React frontend can communicate with the FastAPI backend.

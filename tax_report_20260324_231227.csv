@@ -1,0 +1,7 @@
+coin_id,cost_basis,date,notes,price,qty,realized_pnl,type,unrealized_pnl
+bitcoin,,2026-03-23 19:22:15.999000,,45000.0,0.5,0,BUY,
+bitcoin,45000.0,HOLDING,,69235,0.5,,HOLD,12117.5
+ethereum,,2026-03-23 19:22:16.187000,,2400.0,5.0,0,BUY,
+ethereum,2400.0,HOLDING,,2113.12,5.0,,HOLD,-1434.4000000000015
+solana,,2026-03-23 19:22:16.408000,,95.0,50.0,0,BUY,
+solana,95.0,HOLDING,,89.05,50.0,,HOLD,-297.5

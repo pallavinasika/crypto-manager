@@ -1,0 +1,40 @@
+﻿[!] WARNING: Critical settings missing or using defaults: SECRET_KEY
+[*] Secure your application by setting these in a .env file.
+
+============================================================
+python : Traceback (most recent call last):
+At line:1 char:1
++ python main.py analyze > analysis_output.txt 
+2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo          : NotSpecified: (T 
+   raceback (most recent call last)::String)   
+  [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandErr 
+   or
+ 
+  File "D:\CPM\crypto_portfolio_avd - Copy 
+2\main.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "D:\CPM\crypto_portfolio_avd - Copy 
+2\main.py", line 221, in main
+    run_analysis()
+    ~~~~~~~~~~~~^^
+  File "D:\CPM\crypto_portfolio_avd - Copy 
+2\main.py", line 49, in run_analysis
+    print("\U0001f52c Running Full Crypto 
+Analysis (Parallel Processing)")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shruti\AppData\Local\Programs\
+Python\Python314\Lib\encodings\cp1252.py", 
+line 19, in encode
+    return codecs.charmap_encode(input,self.err
+ors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't 
+encode character '\U0001f52c' in position 0: 
+character maps to <undefined>

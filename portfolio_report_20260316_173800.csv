@@ -1,0 +1,3 @@
+symbol,name,quantity,purchase_price,current_price,current_value,profit_loss,profit_loss_pct,allocation_pct,risk_score,risk_label,volatility
+eth,Ethereum,6.0,10.0,2060.12,12360.72,12300.72,20501.2,3.37447330160858,0.6157500674749615,🟠 High Risk,1.2224354074161825
+btc,Bitcoin,5.0,20.0,70788,353940.0,353840.0,353840.0,96.62552669839143,0.48757725682378344,🟡 Medium Risk,1.207670558794626

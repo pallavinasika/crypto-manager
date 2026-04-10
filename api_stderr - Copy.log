@@ -1,0 +1,69 @@
+INFO:     Will watch for changes in these directories: ['D:\\CPM\\crypto_portfolio_avd _Copy2']
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [5464] using WatchFiles
+INFO:     Started server process [20160]
+INFO:     Waiting for application startup.
+2026-03-23 23:53:19 | CryptoIntelligence   | INFO     | AI Crypto Platform Started!
+INFO:     Application startup complete.
+INFO:     127.0.0.1:57037 - "WebSocket /socket.io/?EIO=4&transport=websocket&sid=rHyFUiuG5Yv2VaIuAAAA" [accepted]
+INFO:     connection open
+2026-03-23 23:53:30 | CryptoIntelligence   | INFO     | Stored 20 market data points in MongoDB
+WARNING:  WatchFiles detected changes in 'utils\final_check.py'. Reloading...
+2026-03-23 23:54:32 | CryptoIntelligence   | INFO     | Stored 20 market data points in MongoDB
+INFO:     Shutting down
+INFO:     connection closed
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20160]
+WARNING:  WatchFiles detected changes in 'backend\services\data_collector.py', 'backend\api\server.py', 'database\mongo_connection.py', 'utils\repair_project.py', 'utils\final_check.py', 'utils\test_fastapi.py', 'main.py'. Reloading...
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=5464, pipe_handle=1108)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                                  run_name="__mp_main__")
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\CPM\crypto_portfolio_avd _Copy2\main.py", line 24, in <module>
+    from backend.services.data_collector import CryptoDataCollector
+  File "D:\CPM\crypto_portfolio_avd _Copy2\backend\services\data_collector.py", line 11, in <module>
+    from database.mongo_connection import get_database, get_storage_name
+  File "D:\CPM\crypto_portfolio_avd _Copy2\database\__init__.py", line 2, in <module>
+    from database.mongo_connection import connect_to_mongo, close_mongo_connection, get_database
+  File "D:\CPM\crypto_portfolio_avd _Copy2\database\mongo_connection.py", line 4, in <module>
+    from motor.motor_asyncio import AsyncIOMotorClient
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\site-packages\motor\__init__.py", line 28, in <module>
+    from .motor_tornado import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\site-packages\motor\motor_tornado.py", line 18, in <module>
+    from .frameworks import tornado as tornado_framework
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\site-packages\motor\frameworks\tornado\__init__.py", line 25, in <module>
+    import tornado.process
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\site-packages\tornado\process.py", line 36, in <module>
+    from tornado.iostream import PipeIOStream
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\site-packages\tornado\iostream.py", line 40, in <module>
+    from tornado.netutil import ssl_wrap_socket, _client_ssl_defaults, _server_ssl_defaults
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\site-packages\tornado\netutil.py", line 35, in <module>
+    _client_ssl_defaults = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\ssl.py", line 722, in create_default_context
+    context.load_default_certs(purpose)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\ssl.py", line 533, in load_default_certs
+    self._load_windows_store_certs(storename, purpose)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shruti\AppData\Local\Programs\Python\Python314\Lib\ssl.py", line 517, in _load_windows_store_certs
+    for cert, encoding, trust in enum_certificates(storename):
+                                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyboardInterrupt
+INFO:     Started server process [22164]
+INFO:     Waiting for application startup.

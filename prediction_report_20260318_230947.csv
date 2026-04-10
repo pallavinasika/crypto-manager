@@ -1,0 +1,6 @@
+coin_id,current_price,predicted_price,change_pct,direction,model
+cardano,0.290302,0.4883090328267025,68.20725755478864,📈 Bullish,random_forest
+binancecoin,673.43,668.9010499999998,-0.6725197867633037,📉 Bearish,random_forest
+ethereum,2338.35,3741.2261832934364,59.99427730209064,📈 Bullish,random_forest
+solana,95.06,154.6320628940642,62.66785492748179,📈 Bullish,random_forest
+bitcoin,74593.0,57040.546805344,-23.530965633043323,📉 Bearish,random_forest

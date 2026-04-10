@@ -1,0 +1,4 @@
+avg_cost,coin_id,current_price,date,notes,price,quantity,realized_pnl,type,unrealized_pnl
+,bitcoin,,2026-03-18 12:08:13.454780,,70000.0,1.5,25000.0,SELL,
+60000.0,bitcoin,75000.0,HOLDING,,,0.5,,HOLD,7500.0
+3000.0,ethereum,3500.0,HOLDING,,,10.0,,HOLD,5000.0
